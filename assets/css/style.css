@@ -7,12 +7,12 @@
 :root {
     --primary-color:#fef3ef;
     --secondary-color: #6a6a6d;
-    --tertiary-color:rgb(255, 115, 154);; 
+    --tertiary-color:rgb(252, 205, 199);
   }
 
 body {
     font-family: FreeMono, monospace; 
-    background-color: var(--teritary-color);
+    background-color: rgba(219, 172, 208, 0.664);
     color: var(--primary-color);
 }
 /*header - navigation*/
@@ -24,7 +24,7 @@ header {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    opacity: 0.5;
+    opacity: 0.9;
     background-image: url("../images/herobg.jpg");
     background-size: cover;
     background-position: center;
@@ -116,38 +116,107 @@ header nav ul li a:hover {
 }
 
 /*abot me section*/
-.intro {
+.box {
+    width: 80%;
+    color: aliceblue;
+    margin: 50px auto;
+}
+
+.row {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
-    color: var(--tertiary-color);
-    margin: 25px auto;
+    align-items: stretch;
 }
 
 .section-title {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    width: 20%;
-    color: var(--tertiary-color);
-    font-size: 48px;
-    border-right: 3px solid;
-    border-color: var(--tertiary-color) ;
+    width: 25%;
+    font-size: 40px;
     text-align: right;
+    border-right: 8px solid;
+    border-color: aliceblue;
+    flex: 1;
+}
+
+.section-title h2 {
+    padding-right: 20px;
 }
 
 .section-text {
-    width: 80%;
+    width: 75%;
     font-size: 17px;
     line-height: 1.5; 
-    padding-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
+    margin-left: 40px;
 }
 .section-text p {
-    margin-bottom: 10px;;
+    margin-bottom: 10px;
 }
+
+/*work section*/
+.container {
+width: 75%;
+margin-left: 40px;
+}
+
+.large-img {
+    width: 100%;
+}
+
+.large-img img {
+    flex: 1;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    border: 7px solid;
+    border-color: rgb(164, 104, 251);
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.small-img {
+ width: 50%;
+}
+
+.small-img img {
+    width: 100%;
+    max-width: 580px;
+    height: 287;
+    border: 5px solid;
+    border-color: rgb(164, 104, 251);
+    opacity: 0.8;
+    flex: 1;
+}
+.row img:hover {
+    opacity: 1.0;
+}
+
+.placeholder {
+    width: 100%;
+    max-width: 580px;
+    height: 287px;
+    flex: 1;
+    background-color: #fef3ef;
+    border: 5px solid;
+    border-color: rgb(164, 104, 251);
+    opacity: 0.8;
+}
+
+.placeholder h3 {
+    padding: 80px;
+    font-size: 50px;
+    text-align: center;
+    color:rgb(164, 104, 251);
+}
+
+/*contact me section*/
+.section-text a {
+    flex: 1;
+    font-size: 25px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+ 
+
 
