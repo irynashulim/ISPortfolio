@@ -111,7 +111,8 @@ header nav ul li a:hover {
 
 .hero img {
     max-width: 100%;
-    height: 400px;
+    max-width: 400px;
+    height: auto;
     border-radius: 50%;
 }
 
@@ -154,12 +155,13 @@ header nav ul li a:hover {
 
 /*work section*/
 .container {
-width: 75%;
-margin-left: 40px;
+    width: 75%;
+    margin-left: 40px;
 }
 
 .large-img {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .large-img img {
@@ -169,31 +171,34 @@ margin-left: 40px;
     height: auto;
     border: 7px solid;
     border-color: rgb(164, 104, 251);
-    opacity: 0.8;
-    margin-bottom: 10px;
 }
 
 .small-img {
- width: 49.5%;
- 
+    width: 49%;
+    margin-bottom: 10px;
 }
 
-.img-margin {
-    margin-right: 7px;
-}
 
 .small-img img {
     width: 100%;
-    max-width: 565px;
+    max-width: 600px;
     height: auto;
     border: 7px solid;
-    border-color: rgb(164, 104, 251);
-    opacity: 0.8;
-    margin-bottom: 10px;
+    border-color: rgb(164, 104, 251);    
 }
-.row img:hover {
-    opacity: 1.0;
-}
+
+/*image title block*/
+.img-title {
+    position: relative;
+  }
+  .text-block {
+    position: absolute;
+    bottom: 10px;
+    background-color: rgb(164, 104, 251);
+    color: aliceblue;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
 /*contact me section*/
 .last-row {
@@ -224,7 +229,7 @@ footer {
     flex-wrap: wrap;
 }
 
-footer h2 {
+footer h4 {
     color: aliceblue;
     font-size: 30px;
     margin: 0;
@@ -234,5 +239,105 @@ footer div {
     line-height: 1.5;
 }  
  
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 1165px) {
+    .box {
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+      header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+      }
+      
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+    
+      footer h2, footer div {
+        text-align: center;
+        width: 100%;
+      }  
 
+      .hero h1 {
+        width: 100%;
+        text-align: center;
+      }
+
+      .box {
+          width: 100%;
+      }
+
+      .section-title {
+          border-right: none;
+          border-bottom: 5px solid;
+          text-align: center;
+      }
+
+      .section-text {
+          width: 100%;
+          margin: 10px 25px;
+      }
+
+      .container {
+          width: 100%;
+          margin: 25px;
+      }
+
+      .last-row {
+          justify-content: space-around;
+    }
+}
+    /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    .box {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .section-title {
+          font-size: 
+      }
+    .small-img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .box {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .section-text {
+        margin: 5px 15px;
+    }
+
+    .container {
+        margin: 15px;
+    }
+}
+
+
+/* Width at 480px and below */
+@media screen and (max-width: 480px) {
+
+    .box {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .hero-top h2 {
+        text-align: center;
+    }
+    .hero img {
+        max-width: 300px;
+    }
+}
 
